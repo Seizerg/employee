@@ -1,6 +1,5 @@
 
 const express = require('express');
-const port = 8000;
 const app = express();
 
 const expressLayouts = require('express-ejs-layouts');
@@ -55,10 +54,10 @@ app.use(passport.setAuthenticatedUser);
 
 app.use('/', require('./routes/index'));
 
-app.listen(port||process.env.PORT, function(err){
+app.listen(process.env.PORT || 8000, function(err){
     if(err){
         console.log("Error while connecting to server");
         return;
     }
-    console.log(`Server running on port ${port}.`);
+    console.log(`Server running on port.`);
 });
