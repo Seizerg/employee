@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 // connect from mongodb
 //  mongoose.connect('mongodb://localhost:27017/Review-System');
-const url= "mongodb+srv://deepakdb:deepakdb@atlascluster.okcc0yz.mongodb.net/?retryWrites=true&w=majority";
+const url= "mongodb+srv://deepakdb:deepakdb@atlascluster.okcc0yz.mongodb.net/test";
 mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
